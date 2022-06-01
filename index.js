@@ -32,8 +32,6 @@ async function test() {
     responseType: "text/plain"
   });
 
-  //   debugger;
-
   const container = document.body.querySelector("#container");
 
   new Array(10).fill().forEach((_, idx) => {
