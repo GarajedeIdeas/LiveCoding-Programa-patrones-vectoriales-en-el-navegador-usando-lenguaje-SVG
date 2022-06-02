@@ -20,13 +20,13 @@ svg.setAttribute("height", height);
 
 svg.appendChild(GDOMEl);
 
-for (var i = 0; i < 3000; i++) {
+for (var i = 0; i < 10000; i++) {
   var circle = newCircle(k);
 
   const circleDOMEl = document.createElementNS(xmlns, "circle");
   circleDOMEl.setAttribute("cx", circle[0]);
   circleDOMEl.setAttribute("cy", circle[1]);
-  circle[2] > 20 ? circleDOMEl.setAttribute("r", circle[2]) : null;
+  circle[2] > 10 ? circleDOMEl.setAttribute("r", circle[2]) : null;
   circleDOMEl.style.fillOpacity = (Math.random() + 0.5) / 2;
 
   GDOMEl.appendChild(circleDOMEl);
